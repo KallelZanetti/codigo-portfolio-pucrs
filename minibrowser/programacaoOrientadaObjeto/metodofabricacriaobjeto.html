@@ -1,0 +1,16 @@
+
+<script>
+function criaEmpregado(salarioBase, valorHoraExtra, qtdHorasExtras) {
+    return {
+        salarioBase,
+        valorHoraExtra,
+        qtdHorasExtras,
+        calculaSalario() {
+            return this.salarioBase + (this.qtdHorasExtras * this.valorHoraExtra);
+        }
+    };
+};
+const empregado1 =criaEmpregado(6100, 38.82 , 10);
+const empregado2 =criaEmpregado(3400, 15 , 10);
+const empregado3 =criaEmpregado(4000, 20 , 10);
+</script>

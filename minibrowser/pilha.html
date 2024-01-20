@@ -1,0 +1,31 @@
+<script>
+    //LIFO - STACK
+    console.log('pilha/stack');
+        class BrowserHistoryStack {
+        constructor() {
+            this.cursos = 0;
+            this.data = [];
+        }
+        push(item) {
+            this.cursos = this.cursos + 1;
+            this.data.push(item);
+        }
+        back() { // pop()
+            this.cursos = this.cursos - 1;
+                // this.data.pop();
+        }  
+        print() {       
+            console.log('cursor', this.cursor);
+            console.log('itens atuais', this.data);
+        }
+
+      }   
+
+    const history = new BrowserHistoryStack();
+    history.push('https://google.com');
+    history.push('https://facebook.com');
+    history.push('https://instagram.com');
+    history.print();
+    history.back();
+    history.print();
+</script>

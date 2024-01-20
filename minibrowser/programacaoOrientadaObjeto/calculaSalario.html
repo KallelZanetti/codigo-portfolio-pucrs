@@ -1,0 +1,9 @@
+const empregado = {
+    salarioFixo: 6100,
+    valorHoraExtra: 38.82,
+    horasExtra:7,
+    calculaSalario: function(){
+        return this.salarioFixo + (this.horasExtra * this.valorHoraExtra);
+    }
+};
+console.log(empregado.calculaSalario());
